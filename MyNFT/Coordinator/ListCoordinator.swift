@@ -20,5 +20,10 @@ class ListCoordinator: BaseCoordinator {
     
     func openDetail(_ item: Int) {
         print("The item: \(item)")
+        if (item != -1) {
+            let coordinator = DetailCoordinator()
+            coordinator.navigationController = navigationController
+            start(coordinator: coordinator)
+        }
     }
 }

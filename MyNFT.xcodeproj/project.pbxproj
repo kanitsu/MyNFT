@@ -17,6 +17,10 @@
 		1CC183752A5341540047E512 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183742A5341540047E512 /* ListViewController.swift */; };
 		1CC183782A5342000047E512 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183772A5342000047E512 /* ListCoordinator.swift */; };
 		1CC1837B2A5342FA0047E512 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1837A2A5342FA0047E512 /* ListViewModel.swift */; };
+		1CC183902A53471D0047E512 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1838F2A53471D0047E512 /* Detail.storyboard */; };
+		1CC183932A5347440047E512 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183922A5347440047E512 /* DetailViewController.swift */; };
+		1CC183962A5349760047E512 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183952A5349760047E512 /* DetailCoordinator.swift */; };
+		1CC1839A2A534AC90047E512 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183992A534AC90047E512 /* UIViewControllerExtensions.swift */; };
 		8C6E105CB9BA0295D5112A11 /* Pods_MyNFT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4104A2593AE742E246B5C7 /* Pods_MyNFT.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		1CC183742A5341540047E512 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1CC183772A5342000047E512 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		1CC1837A2A5342FA0047E512 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1CC1838F2A53471D0047E512 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		1CC183922A5347440047E512 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1CC183952A5349760047E512 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		1CC183992A534AC90047E512 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		3F4104A2593AE742E246B5C7 /* Pods_MyNFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F565081498AE94F36FBAD6 /* Pods-MyNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNFT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNFT/Pods-MyNFT.debug.xcconfig"; sourceTree = "<group>"; };
 		F177D26F29480A249059C498 /* Pods-MyNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNFT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNFT/Pods-MyNFT.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 				168447FB22E317E900454D5E /* BaseCoordinator.swift */,
 				168447F222E317CE00454D5E /* AppCoordinator.swift */,
 				1CC183772A5342000047E512 /* ListCoordinator.swift */,
+				1CC183952A5349760047E512 /* DetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -82,6 +91,8 @@
 			children = (
 				1CC183712A5341300047E512 /* List.storyboard */,
 				1CC183742A5341540047E512 /* ListViewController.swift */,
+				1CC1838F2A53471D0047E512 /* Detail.storyboard */,
+				1CC183922A5347440047E512 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +119,7 @@
 		16EA3BC122E30F6300B18097 /* MyNFT */ = {
 			isa = PBXGroup;
 			children = (
+				1CC183982A534A9F0047E512 /* Extensions */,
 				168447F322E317CE00454D5E /* AppDelegate.swift */,
 				168447EB22E317CE00454D5E /* Model */,
 				168447F422E317CE00454D5E /* View */,
@@ -118,6 +130,14 @@
 				16EA3BCE22E30F6400B18097 /* Info.plist */,
 			);
 			path = MyNFT;
+			sourceTree = "<group>";
+		};
+		1CC183982A534A9F0047E512 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CC183992A534AC90047E512 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8507E2E02AF5457D22C79896 /* Pods */ = {
@@ -202,6 +222,7 @@
 				16EA3BCD22E30F6400B18097 /* LaunchScreen.storyboard in Resources */,
 				1CC183722A5341300047E512 /* List.storyboard in Resources */,
 				16EA3BCA22E30F6400B18097 /* Assets.xcassets in Resources */,
+				1CC183902A53471D0047E512 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +273,14 @@
 			files = (
 				168447F922E317CE00454D5E /* AppCoordinator.swift in Sources */,
 				16EA3BDA22E3115400B18097 /* AlertExtension.swift in Sources */,
+				1CC1839A2A534AC90047E512 /* UIViewControllerExtensions.swift in Sources */,
 				1CC183752A5341540047E512 /* ListViewController.swift in Sources */,
+				1CC183962A5349760047E512 /* DetailCoordinator.swift in Sources */,
 				168447FA22E317CE00454D5E /* AppDelegate.swift in Sources */,
 				1CC183782A5342000047E512 /* ListCoordinator.swift in Sources */,
 				1CC1837B2A5342FA0047E512 /* ListViewModel.swift in Sources */,
 				168447FC22E317E900454D5E /* BaseCoordinator.swift in Sources */,
+				1CC183932A5347440047E512 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
