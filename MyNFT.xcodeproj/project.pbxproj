@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		168447F922E317CE00454D5E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168447F222E317CE00454D5E /* AppCoordinator.swift */; };
+		168447FA22E317CE00454D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168447F322E317CE00454D5E /* AppDelegate.swift */; };
+		168447FC22E317E900454D5E /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168447FB22E317E900454D5E /* BaseCoordinator.swift */; };
+		16EA3BCA22E30F6400B18097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EA3BC922E30F6400B18097 /* Assets.xcassets */; };
+		16EA3BCD22E30F6400B18097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EA3BCB22E30F6400B18097 /* LaunchScreen.storyboard */; };
+		16EA3BDA22E3115400B18097 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA3BD622E310FD00B18097 /* AlertExtension.swift */; };
+		1CC183722A5341300047E512 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC183712A5341300047E512 /* List.storyboard */; };
+		1CC183752A5341540047E512 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183742A5341540047E512 /* ListViewController.swift */; };
+		1CC183782A5342000047E512 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC183772A5342000047E512 /* ListCoordinator.swift */; };
+		1CC1837B2A5342FA0047E512 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1837A2A5342FA0047E512 /* ListViewModel.swift */; };
+		8C6E105CB9BA0295D5112A11 /* Pods_MyNFT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4104A2593AE742E246B5C7 /* Pods_MyNFT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EB23E3F3B58FD4072492954 /* Pods-MVVM+ChildCoordinators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM+ChildCoordinators.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM+ChildCoordinators/Pods-MVVM+ChildCoordinators.debug.xcconfig"; sourceTree = "<group>"; };
+		168447F222E317CE00454D5E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		168447F322E317CE00454D5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		168447FB22E317E900454D5E /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		16EA3BC022E30F6300B18097 /* MyNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EA3BC922E30F6400B18097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16EA3BCC22E30F6400B18097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16EA3BCE22E30F6400B18097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16EA3BD622E310FD00B18097 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		1CC183712A5341300047E512 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		1CC183742A5341540047E512 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1CC183772A5342000047E512 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		1CC1837A2A5342FA0047E512 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		3F4104A2593AE742E246B5C7 /* Pods_MyNFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F565081498AE94F36FBAD6 /* Pods-MyNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNFT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNFT/Pods-MyNFT.debug.xcconfig"; sourceTree = "<group>"; };
+		F177D26F29480A249059C498 /* Pods-MyNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNFT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNFT/Pods-MyNFT.release.xcconfig"; sourceTree = "<group>"; };
+		FA117B3E608B190C7A5F67C2 /* Pods-MVVM+ChildCoordinators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM+ChildCoordinators.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM+ChildCoordinators/Pods-MVVM+ChildCoordinators.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16EA3BBD22E30F6300B18097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6E105CB9BA0295D5112A11 /* Pods_MyNFT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		168447EB22E317CE00454D5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		168447EF22E317CE00454D5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1837A2A5342FA0047E512 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		168447F122E317CE00454D5E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				168447FB22E317E900454D5E /* BaseCoordinator.swift */,
+				168447F222E317CE00454D5E /* AppCoordinator.swift */,
+				1CC183772A5342000047E512 /* ListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		168447F422E317CE00454D5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CC183712A5341300047E512 /* List.storyboard */,
+				1CC183742A5341540047E512 /* ListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16EA3B5C22E30EF100B18097 = {
+			isa = PBXGroup;
+			children = (
+				16EA3BD622E310FD00B18097 /* AlertExtension.swift */,
+				16EA3BC122E30F6300B18097 /* MyNFT */,
+				16EA3B6622E30EF100B18097 /* Products */,
+				8507E2E02AF5457D22C79896 /* Pods */,
+				C20A649BF53DF3D3EAA75C7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16EA3B6622E30EF100B18097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16EA3BC022E30F6300B18097 /* MyNFT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16EA3BC122E30F6300B18097 /* MyNFT */ = {
+			isa = PBXGroup;
+			children = (
+				168447F322E317CE00454D5E /* AppDelegate.swift */,
+				168447EB22E317CE00454D5E /* Model */,
+				168447F422E317CE00454D5E /* View */,
+				168447EF22E317CE00454D5E /* ViewModel */,
+				168447F122E317CE00454D5E /* Coordinator */,
+				16EA3BC922E30F6400B18097 /* Assets.xcassets */,
+				16EA3BCB22E30F6400B18097 /* LaunchScreen.storyboard */,
+				16EA3BCE22E30F6400B18097 /* Info.plist */,
+			);
+			path = MyNFT;
+			sourceTree = "<group>";
+		};
+		8507E2E02AF5457D22C79896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EB23E3F3B58FD4072492954 /* Pods-MVVM+ChildCoordinators.debug.xcconfig */,
+				FA117B3E608B190C7A5F67C2 /* Pods-MVVM+ChildCoordinators.release.xcconfig */,
+				43F565081498AE94F36FBAD6 /* Pods-MyNFT.debug.xcconfig */,
+				F177D26F29480A249059C498 /* Pods-MyNFT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C20A649BF53DF3D3EAA75C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F4104A2593AE742E246B5C7 /* Pods_MyNFT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16EA3BBF22E30F6300B18097 /* MyNFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EA3BCF22E30F6400B18097 /* Build configuration list for PBXNativeTarget "MyNFT" */;
+			buildPhases = (
+				0E468BCC79A2992FEE0F1708 /* [CP] Check Pods Manifest.lock */,
+				16EA3BBC22E30F6300B18097 /* Sources */,
+				16EA3BBD22E30F6300B18097 /* Frameworks */,
+				16EA3BBE22E30F6300B18097 /* Resources */,
+				2EAF04DDC52FD6BB62E73663 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNFT;
+			productName = "MVVM+ChildCoordinators";
+			productReference = 16EA3BC022E30F6300B18097 /* MyNFT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16EA3B5D22E30EF100B18097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Wojciech Kulik";
+				TargetAttributes = {
+					16EA3BBF22E30F6300B18097 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 16EA3B6022E30EF100B18097 /* Build configuration list for PBXProject "MyNFT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16EA3B5C22E30EF100B18097;
+			productRefGroup = 16EA3B6622E30EF100B18097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16EA3BBF22E30F6300B18097 /* MyNFT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16EA3BBE22E30F6300B18097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EA3BCD22E30F6400B18097 /* LaunchScreen.storyboard in Resources */,
+				1CC183722A5341300047E512 /* List.storyboard in Resources */,
+				16EA3BCA22E30F6400B18097 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E468BCC79A2992FEE0F1708 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyNFT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EAF04DDC52FD6BB62E73663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNFT/Pods-MyNFT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNFT/Pods-MyNFT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNFT/Pods-MyNFT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16EA3BBC22E30F6300B18097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168447F922E317CE00454D5E /* AppCoordinator.swift in Sources */,
+				16EA3BDA22E3115400B18097 /* AlertExtension.swift in Sources */,
+				1CC183752A5341540047E512 /* ListViewController.swift in Sources */,
+				168447FA22E317CE00454D5E /* AppDelegate.swift in Sources */,
+				1CC183782A5342000047E512 /* ListCoordinator.swift in Sources */,
+				1CC1837B2A5342FA0047E512 /* ListViewModel.swift in Sources */,
+				168447FC22E317E900454D5E /* BaseCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16EA3BCB22E30F6400B18097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16EA3BCC22E30F6400B18097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16EA3B7522E30EF400B18097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16EA3B7622E30EF400B18097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16EA3BD022E30F6400B18097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F565081498AE94F36FBAD6 /* Pods-MyNFT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyNFT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chlind.mynft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16EA3BD122E30F6400B18097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F177D26F29480A249059C498 /* Pods-MyNFT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyNFT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chlind.mynft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16EA3B6022E30EF100B18097 /* Build configuration list for PBXProject "MyNFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA3B7522E30EF400B18097 /* Debug */,
+				16EA3B7622E30EF400B18097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16EA3BCF22E30F6400B18097 /* Build configuration list for PBXNativeTarget "MyNFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA3BD022E30F6400B18097 /* Debug */,
+				16EA3BD122E30F6400B18097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16EA3B5D22E30EF100B18097 /* Project object */;
+}
